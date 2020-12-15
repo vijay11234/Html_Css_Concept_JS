@@ -1,0 +1,70 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  #main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+  }
+
+  #main>article {
+    flex: 1;
+  }
+
+  #main>nav,
+  #main>aside {
+    flex: 0 0 20vw;
+    background: beige;
+  }
+
+  #main>nav {
+    order: -1;
+  }
+
+  header,
+  footer,
+  article,
+  nav,
+  aside {
+    padding: 1em;
+  }
+
+  header,
+  footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+</style>
+
+<body>
+  <header>Header</header>
+  <div id="main">
+    <article>
+      <h2>First article></h2>
+
+      <p>Tacos actually microdosing, pour-over semiptics banjo chicharrones retro fanny pack portland everyday carry
+        vinyl typewriter.
+        Tacos PBR&B pork belly, everyday ennui picked sriracha normcore hashtag polaroid single-origin coffee
+        cold-pressed.
+        PBR&B tattoned trust fund twee, legging salvia iPhone photo booth health goth gastropub hammock.
+      </p>
+
+      <h2>Second article></h2>
+
+                <p>Tacos actually microdosing, pour-over semiptics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.
+                    Tacos PBR&B pork belly, everyday ennui picked sriracha normcore hashtag polaroid single-origin coffee cold-pressed. 
+                    PBR&B tattoned trust fund twee, legging salvia iPhone photo booth health goth gastropub hammock.
+                </p>
+    </article>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
